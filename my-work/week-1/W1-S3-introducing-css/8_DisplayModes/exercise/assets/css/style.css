@@ -1,5 +1,12 @@
 /* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    position: relative;
     font-family: Arial, sans-serif;
 }
 
@@ -7,6 +14,10 @@ header {
     background-color: lightblue;
     padding: 20px;
     text-align: center;
+}
+
+section {
+    height: 100vh;
 }
 
 footer {
@@ -17,15 +28,17 @@ footer {
 
 /* Issue: This text is currently hidden */
 .hidden-text {
-    display: none;
+    display: block;
     /* Fix this */
 }
 
 /* Items are currently stacked vertically */
 .item {
-    display: block;
+    display: inline-block;
     /* Change this to allow them to be side by side */
     padding: 10px;
     background-color: lightgreen;
     margin: 5px;
+    width: 200px;
+    height: 200px;
 }
