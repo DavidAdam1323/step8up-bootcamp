@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #333333;
     margin: 20px;
     padding: 0;
 }
@@ -13,12 +14,14 @@ header {
 }
 
 header h1 {
-    color: #333;
+    font-family: Cambria, serif;
+    color: #333333;
 }
 
 header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color: #666;
+    color: #555555;
 }
 
 /* Exercise Box Styles */
@@ -68,4 +71,24 @@ header p {
     background-color: lightgreen;
     font-family: 'Times New Roman', Times, serif
     /* Green */
+}
+
+.box-3 {
+    background-color: lightcoral;
+    font-family: Verdana, sans-serif ;
+}
+
+.box-4 {
+    background-color: lightgoldenrodyellow ;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box-5 {
+    background-color: lightsalmon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-6 {
+    background-color: lightpink;
+    font-family: Comic Sans Ms;
 }
