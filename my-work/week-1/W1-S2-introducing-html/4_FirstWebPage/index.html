@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <title>My Portfolio</title>
+
+    <style>
+      /* ===============================
+        1. Global Reset & Base Styles
+        =============================== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #edf2f6;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      p {
+        padding: 10px 0;
+      }
+
+      hr {
+        border: none;
+        height: 1px;
+        background: #ccc;
+        margin: 20px 0;
+      }
+
+      /* Layout spacing for all main sections */
+      header,
+      section,
+      footer {
+        padding: 20px 40px;
+      }
+
+      /* ===============================
+        2. Typography
+        =============================== */
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: #a4c1fc;
+      }
+
+      /* ===============================
+        3. Header
+        =============================== */
+      header {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: #16263e;
+        color: white;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      /* ===============================
+        4. Contact Section
+        =============================== */
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-top: 20px;
+      }
+
+      .contact-container form {
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: #a4c1fc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                    0 6px 20px rgba(0, 0, 0, 0.19);
+      }
+
+      .contact-container input,
+      .contact-container textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-image img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+                    0 6px 20px rgba(0, 0, 0, 0.19);
+      }
+
+      /* ===============================
+        5. Buttons
+        =============================== */
+      button {
+        padding: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #16263e;
+        color: white;
+        font-size: 1rem;
+        transition: 0.3s ease;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* ===============================
+        6. Footer
+        =============================== */
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #16263e;
+        color: white;
+      }
+
+      .footer-text {
+        font-size: 0.9rem;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 20px;
+      }
+
+      .footer-socials a {
+        color: white;
+        font-size: 2.5rem;
+        transition: 0.3s;
+      }
+
+      .footer-socials a:hover {
+        color: #a4c1fc;
+      }
+
+      /* ===============================
+        7. Responsive Design
+        =============================== */
+      @media (max-width: 480px) {
+        header,
+        section,
+        footer {
+          padding: 10px 20px;
+        }
+
+        header h1 {
+          font-size: 1.5rem;
+        }
+
+        header h3 {
+          font-size: 1rem;
+        }
+
+        .contact-container form {
+          width: 100%;
+          height: auto;
+        }
+
+        .contact-image img {
+          width: 100%;
+          height: auto;
+        }
+
+        footer {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+
+        .footer-socials {
+          order: -1;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <!-- image section -->
+      <div>
+        <img
+          style="width: 100px; height: 100px; border-radius: 50%"
+          src="https://media.licdn.com/dms/image/v2/D4E03AQG3QSuwHB--Wg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727000401548?e=1761177600&v=beta&t=hkFMqhDbYy4chBFV5qi-F0TckJHGgNSrCmRP2Dy-eNQ"
+          alt="My Picture"
+        />
+      </div>
+      <div>
+        <h1>David Adam Silva</h1>
+        <h3>Full-Stack Web Developer</h3>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <section>
+      <h2>About Me</h2>
+      <div>
+        <p>
+          My background is in music, where I spent 21 years as a session
+          guitarist—performing, tutoring, and collaborating with bands and solo
+          artists. That journey taught me how to adapt quickly, work with diverse
+          personalities, and stay resilient under pressure.
+        </p>
+        <p>
+          When I transitioned into tech, I found that many of the same skills
+          carried over seamlessly—problem-solving, teamwork, and clear
+          communication. One of my strongest qualities is collaboration: I make
+          sure teams stay aligned, I welcome feedback, and I turn it into
+          meaningful action. I also thrive under pressure, staying organised and
+          focused while managing multiple projects without compromising quality.
+        </p>
+        <p>
+          Above all, I embrace change, enjoy learning, and love contributing to a
+          team that's working toward something meaningful. I'm eager to grow,
+          bring value, and build a long-term career in the industry.
+        </p>
+        <p>
+          If given the opportunity, I'll be a dedicated, adaptable, and reliable
+          team member—committed to learning, improving, and making a positive
+          impact.
+        </p>
+      </div>
+    </section>
+
+    <br>
+    <hr />
+
+    <!-- contact section -->
+    <section>
+      <h2>Contact Me</h2>
+      <main class="contact-container">
+        <form action="#" method="post" style="display: flex; flex-direction: column; justify-content: center;">
+          <!-- name input -->
+          <label for="name"><i class="fas fa-user"></i> Name:</label>
+          <input type="text" id="name" placeholder="e.g. David Silva" />
+  
+          <br />
+  
+          <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="e.g. +44 7123 456789"
+            required
+          />
+  
+          <br />
+  
+          <!-- email input --> 
+          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="e.g. david@example.com"
+            required
+          />
+  
+          <br />
+  
+          <!-- message field -->
+          <label for="message"><i class="fas fa-comment"></i> Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="10" cols="50"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+  
+          <br />
+  
+          <!-- submit button -->
+          <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </main>
+    </section>
+
+    <br />
+    <br />
+
+    <!-- footer section -->
+    <footer>
+      <p class="footer-text">© 2025 David Adam Silva | All rights reserved.</p>
+
+      <!-- social links -->
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/davidadamsilva/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/DavidAdam1323" target="_blank"><i class="fab fa-github"></i></a>
+      <div>
+  
+    </footer>
+  </body>
+</html>
