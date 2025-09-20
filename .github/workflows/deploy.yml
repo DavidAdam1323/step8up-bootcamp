@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # This is the crucial part: it uploads the contents of your subfolder
-          path: "my-projects/dasdev-portfolio/"
+          path: "my-projects/dasdev-portfolio/index.html"
 
   deploy:
     environment:
